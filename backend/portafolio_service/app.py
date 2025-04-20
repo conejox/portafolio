@@ -10,7 +10,16 @@ def get_projects():
         {"id": 1, "name": "Proyecto 1", "tech": "Flask"},
         {"id": 2, "name": "Proyecto 2", "tech": "React"},
         {"id": 3, "name": "Proyecto 3", "tech": "chatbot"},
-        {"id": 2, "name": "Proyecto 2", "tech": "React"}
+        {"id": 2, "name": "Proyecto 2", "tech": "React"},
+        {"id": 3, "name": "Proyecto 3", "tech": "chatbot"},
+        {"id": 2, "name": "Proyecto 2", "tech": "React"},
+        {"id": 3, "name": "Proyecto 3", "tech": "chatbot"},
+        {"id": 2, "name": "Proyecto 2", "tech": "React"},
+        {"id": 3, "name": "Proyecto 3", "tech": "chatbot"},
+        {"id": 2, "name": "Proyecto 2", "tech": "React"},
+        {"id": 3, "name": "Proyecto 3", "tech": "chatbot"},
+        {"id": 2, "name": "Proyecto 2", "tech": "React"},
+        {"id": 3, "name": "Proyecto 3", "tech": "chatbot"}
     ]
     return jsonify(projects)  # Retorna datos en formato JSON
 
