@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div>
-      <h1>Mi Portafolio</h1>
+      <h1>Mi Portafolio hola</h1>
       <ul>
         {projects.map(project => (
           <li key={project.id}>
