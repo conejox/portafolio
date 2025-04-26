@@ -2,16 +2,33 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css"; 
 import SocialLinks from './components/SocialLinks';
+import ProjectCard from './components/ProjectCard';
+
+
+const projects = [
+  {
+    title: 'Seven Wonders Search',
+    description: 'This project is a card search website made with React and Flask.',
+    image: '/images/SWpage.jpg',
+    link: 'https://github.com/conejox/sevenwonders',
+    tags: ['React', 'Flask', 'CSS'],
+  },
+  {
+    title: 'Lina Burman Website',
+    description: 'This is a personal website for Lina Burman, a professional painter, made to lear the basics of Flask,HTML,CSS and Javascript.',
+    image: '/images/LBpage.jpg', 
+    link: 'https://github.com/conejox/lina-burman',
+    tags: ['Flask', 'HTML', 'CSS', 'JavaScript'],
+    
+  },
+  // Add more projects here!
+];
 
 function App() {
-  const [projects, setProjects] = useState([]);
+  
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/projects")
-      .then((response) => setProjects(response.data))
-      .catch((error) => console.error("Error:", error));
-  }, []);
+  
+
 
   return (
     <div className="app-container">
@@ -26,31 +43,13 @@ function App() {
         <SocialLinks />
       </div>
 
-      <div className="link-icons">
-        <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin"></i> {/* LinkedIn Icon */}
-        </a>
-        <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github"></i> {/* GitHub Icon */}
-        </a>
-        <a href="YOUR_TWITTER_URL" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter"></i> {/* Twitter Icon */}
-        </a>
-        <a href="YOUR_PERSONAL_URL" target="_blank" rel="noopener noreferrer">
-          <i className="fas fa-home"></i> {/* Personal Website Icon */}
-        </a>
-        <a href="YOUR_EMAIL_URL">
-          <i className="fas fa-envelope"></i> {/* Email Icon */}
-        </a>
-      </div>
+      
       <h1>Mi Portafolio hola</h1>
-      <ul>
-        {projects.map((project) => (
-          <li key={project.id}>
-            {project.name} - {project.tech}
-          </li>
-        ))}
-      </ul>
+      {projects.map((project, index) => (
+  <ProjectCard key={index} project={project} index={index} />
+))}
+
+      
     </div>
   );
 }
