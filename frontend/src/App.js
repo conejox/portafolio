@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./App.css"; // Import the CSS file
+import "./App.css"; 
+import SocialLinks from './components/SocialLinks';
 
 function App() {
   const [projects, setProjects] = useState([]);
@@ -22,6 +23,7 @@ function App() {
         />
         <h1>Alberto Conejeros</h1>
         <p>junior developer</p>
+        <SocialLinks />
       </div>
 
       <div className="link-icons">
