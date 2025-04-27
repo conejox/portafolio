@@ -41,13 +41,15 @@ function App() {
         <h1>Alberto Conejeros</h1>
         <p>junior developer</p>
         <SocialLinks />
-      </div>
+      </div> {/*profile-section */}
 
       
       <h1>Mi Portafolio hola</h1>
+     <div className="projects-container">
       {projects.map((project, index) => (
-  <ProjectCard key={index} project={project} index={index} />
-))}
+       <ProjectCard key={index} project={project} index={index} />
+      ))}
+      </div> {/*projects-container */}
 
       
     </div>
