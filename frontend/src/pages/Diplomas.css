@@ -1,0 +1,51 @@
+.diplomas-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .diploma-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .diploma-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .diploma-item:nth-child(even) {
+    flex-direction: row-reverse; /* Alterna la posición en diplomas pares */
+  }
+  
+  .diploma-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 1.5rem;
+  }
+  
+  .diploma-description {
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  .diploma-description h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .diploma-description p {
+    color: #666;
+    font-size: 1rem;
+  }
+  

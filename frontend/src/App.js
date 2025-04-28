@@ -3,6 +3,10 @@ import axios from "axios";
 import "./App.css"; 
 import SocialLinks from './components/SocialLinks';
 import ProjectCard from './components/ProjectCard';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import ReadingsArchive from './pages/ReadingsArchive';
+import AboutMe from './pages/AboutMe';
+import Diplomas from './pages/Diplomas';
 
 
 const projects = [
@@ -42,6 +46,28 @@ function App() {
         <p>junior developer</p>
         <SocialLinks />
       </div> {/*profile-section */}
+
+      <Router>
+      <div className="app-container">
+
+        {/* Barra de Navegación */}
+        <nav className="nav-bar">
+          <Link to="/">Home</Link>
+          <Link to="/readings">Readings Archive</Link>
+          <Link to="/about">About Me</Link>
+          <Link to="/diplomas">Diplomas</Link>
+        </nav>
+
+        {/* Definición de Rutas */}
+        <Routes>
+          
+          <Route path="/readings" element={<ReadingsArchive />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/diplomas" element={<Diplomas />} />
+        </Routes>
+
+      </div>
+    </Router>
 
       
       <h1>Mi Portafolio hola</h1>
