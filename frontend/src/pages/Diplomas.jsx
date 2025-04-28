@@ -6,19 +6,19 @@ const diplomas = [
     id: 1,
     title: 'Diploma en Desarrollo Web',
     description: 'Curso completo de desarrollo web moderno usando React, Node.js y bases de datos.',
-    image: '/images/diplomas/web-development.jpg', // Ruta relativa desde public/
+    image: '/images/diplomas/PythonDataStructures.png', // Ruta relativa desde public/
   },
   {
     id: 2,
     title: 'Diploma en Python para Ciencia de Datos',
     description: 'Programa intensivo de análisis de datos, visualización y machine learning con Python.',
-    image: '/images/diplomas/data-science.jpg',
+    image: '/images/diplomas/PythonIntermediate.png',
   },
   {
     id: 3,
     title: 'Diploma en Inteligencia Artificial',
     description: 'Certificación en fundamentos de IA aplicada y redes neuronales profundas.',
-    image: '/images/diplomas/artificial-intelligence.jpg',
+    image: '/images/diplomas/SQLintermediate.png',
   },
   // Puedes agregar más diplomas aquí
 ];
