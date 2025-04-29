@@ -1,33 +1,46 @@
 .readings-archive {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .reading-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 2rem;
-  }
-  
-  .reading-list li {
-    cursor: pointer;
-    padding: 0.8rem 1.2rem;
-    margin: 0.5rem 0;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    transition: background-color 0.3s, text-decoration 0.3s, color 0.3s;
-    font-size: 1.1rem;
-  }
-  
-  .reading-list li:hover {
-    background-color: #e2e6ea;
-  }
-  
-  .reading-list li.completed {
-    text-decoration: line-through;
-    color: gray;
-    background-color: #d4edda;
-  }
-  
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.readings-archive h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.readings-archive p {
+  text-align: center;
+  color: #666;
+}
+
+.reading-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.reading-item {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.reading-item h2 {
+  margin: 0 0 0.5rem;
+  color: #222;
+}
+
+.reading-item .meta {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.reading-item .review {
+  color: #444;
+  line-height: 1.5;
+}
