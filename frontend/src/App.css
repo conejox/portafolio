@@ -1,6 +1,6 @@
 
 
-/* CENTRAR TODO */
+
 .app-container {
   display: flex;
   flex-direction: column;
@@ -9,25 +9,26 @@
   padding: 2 rem;
 }
 
-/* SECCIÓN DE PERFIL */
+
 .profile-section {
   margin-bottom: 2rem;
+  padding: 3rem;
   
 }
 
 .profile-image {
-  width: 150px; /* Tamaño pequeño */
+  width: 150px; 
   height: 150px;
   object-fit: cover;
   border-radius: 50%; /* Hace la imagen redonda */
   margin-bottom: 1rem;
 }
 
-/* PROYECTOS */
+
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 4rem; /* Espacio entre proyectos */
+  gap: 4rem; 
   max-width: 1000px;
   width: 100%;
 }
@@ -71,9 +72,10 @@
   align-items: center;
   gap: 2rem;
   background-color: #f8f9fa; /* Color clarito */
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid #ddd;
+  margin: 2rem 0;
 }
 
 .nav-bar a {
@@ -86,6 +88,6 @@
 
 .nav-bar a:hover {
   color: #007BFF;
-  transform: scale(1.05);
+  transform: scale(1.09);
 }
 
