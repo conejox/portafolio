@@ -1,36 +1,10 @@
+
+
 import React from 'react';
 import './ReadingsArchive.css';
+import papers from '../components/lista_papers';
 
-const readings = [
-  {
-    id: 1,
-    title: "Clean Code",
-    author: "Robert C. Martin",
-    year: 2008,
-    review: "Un excelente libro sobre las buenas prácticas para escribir código legible, mantenible y eficiente.",
-  },
-  {
-    id: 2,
-    title: "The Pragmatic Programmer",
-    author: "Andrew Hunt & David Thomas",
-    year: 1999,
-    review: "Ofrece consejos prácticos y filosóficos sobre el oficio de la programación profesional.",
-  },
-  {
-    id: 3,
-    title: "Flask Web Development",
-    author: "Miguel Grinberg",
-    year: 2018,
-    review: "Una guía clara y progresiva para construir aplicaciones web usando Flask y sus extensiones.",
-  },
-  {
-    id: 4,
-    title: "You Don't Know JS (Yet)",
-    author: "Kyle Simpson",
-    year: 2020,
-    review: "Explora en profundidad el lenguaje JavaScript desde una perspectiva técnica avanzada.",
-  },
-];
+const readings = papers.filter(paper => paper.status === "read");
 
 function ReadingsArchive() {
   return (
@@ -52,4 +26,5 @@ function ReadingsArchive() {
 }
 
 export default ReadingsArchive;
+
 
